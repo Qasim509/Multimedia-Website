@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Multimedia</title>
+  <style>
+    /* Bohat simple CSS */
+    body{
+      font-family: Arial, sans-serif;
+      margin:0;
+      padding:20px;
+      background:#edde07;
+      color:#222;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+    }
+    .box{
+      background:#fff;
+      padding:14px;
+      border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.06);
+      width:100%;
+      max-width:720px;
+      text-align:center;
+    }
+    h1{margin:0 0 8px 0;font-size:20px}
+    p{margin:8px 0;color:#555}
+    video,audio{width:100%;border-radius:6px;outline:none}
+    .note{font-size:13px;color:#777;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Simple Video</h1>
+    <!-- External sample video -->
+    <video controls playsinline preload="metadata">
+      <source src="./Bhool_Bhulaiyaa_3__Beiraada___Kartik_Aaryan,_Triptii_Dimri___Sachet-Parampara,_Rashmi_V___Bhushan_K(480p).mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+    <p class="note">Agar aap apna video rakhna chahen to <code>src</code> badal dein.</p>
+  </div>
+
+  <div class="box">
+    <h1>Simple Audio</h1>
+    <!-- External sample audio -->
+    <audio controls preload="auto">
+      <source src="./qasim.mp4" type="audio/wav">
+      Your browser does not support audio.
+    </audio>
+    <p class="note">Apna audio use karne ke liye <code>src</code> change karein ya local file daalein.</p>
+  </div>
+</body>
+</html>
